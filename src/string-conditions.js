@@ -35,8 +35,8 @@ if (STR_FIVE.startsWith('A') === STR_FIVE.endsWith('a')) {
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-let answerFive
-if ("'" + STR_SIX.substring(0) + "'" === STR_SIX.substring(5)) {
+let answerFive = false
+if (STR_SIX.at(0) === STR_SIX.at(-1)) {
   answerFive = true
 }
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
